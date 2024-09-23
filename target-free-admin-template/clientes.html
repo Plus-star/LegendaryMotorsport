@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clientes - Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><img src="assets/img/LegendaryMotorsport-GTAV-Logo.webp" alt="" height="40px" width="100px"></a>
+
+                <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+            <ul class="nav navbar-top-links navbar-right"> 
+				<li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i class="fa fa-user fa-fw"></i> <b>Usuario</b> <i class="material-icons right">arrow_drop_down</i></a></li>
+		  </ul>
+	  </nav>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="../startbootstrap-grayscale-gh-pages/index.html"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión</a></li>
+        </ul>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+    
+                    <li>
+                        <a class="active-menu waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
+                    </li>				
+                    <li>
+                        <a href="table.html" class="waves-effect waves-dark"><i class="fa fa-table"></i> Tablas</a>
+                    </li>
+                    <li>
+                        <a href="clientes.html" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Clientes</a>
+                    </li>
+                    <li>
+                      <a href="usuarios.html" class="waves-effect waves-dark"><i class="fa fa-users"></i> Usuarios</a>
+                  </li>
+                  <li>
+                    <a href="ventas.html" class="waves-effect waves-dark"><i class="fa fa-comment"></i> Ventas</a>
+                </li>
+                </ul>
+    
+            </div>
+    
+        </nav>
+            <!-- /. NAV SIDE  -->
+
+        <div id="page-wrapper">
+            <div class="header">
+                <h1 class="page-header" style="color: white;">
+                    Clientes
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li class="active">Listado</li>
+                </ol>
+            </div>
+
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-action">
+                                Listado de Clientes
+                            </div>
+                            <div class="card-content">
+                                <table class="striped responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Email</th>
+                                            <th>Teléfono</th>
+                                            <th>Fecha de Registro</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Juan Pérez</td>
+                                            <td>juan.perez@example.com</td>
+                                            <td>(123) 456-7890</td>
+                                            <td>2024-01-15</td>
+                                            <td>
+                                                <a href="#modalVer1" class="btn waves-effect waves-light modal-trigger">Ver</a>
+                                                <a href="#modalEditar1" class="btn waves-effect waves-light modal-trigger">Editar</a>
+                                                <a href="#modalEliminar1" class="btn waves-effect waves-light red modal-trigger">Eliminar</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                    </tbody>
+                                </table>
+                                <div class="clearBoth"><br/></div>
+                            </div>
+                        </div>
+                        <a href="#modalAgregar" class="btn waves-effect waves-light modal-trigger">Agregar</a>
+                        <footer>
+                            <p>Legendary Motorsport, todos los derechos reservados.</p>
+                        </footer>
+                    </div>
+                </div>
+                <!-- /. PAGE INNER  -->
+            </div>
+            <!-- /. PAGE WRAPPER  -->
+        </div>
+        <!-- /. WRAPPER  -->
+
+        <div id="modalVer1" class="modal">
+            <div class="modal-content">
+                <h4>Detalles de Cliente</h4>
+                <p>Detalles de Juan Pérez...</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+            </div>
+        </div>
+
+        <div id="modalEditar1" class="modal">
+            <div class="modal-content">
+                <h4>Editar Cliente</h4>
+                <form id="formEditarCliente" action="clientes.html" method="POST">
+                    <input type="hidden" id="clienteId" name="clienteId" value="123"> 
+                    <div class="input-field">
+                        <input id="nombre" type="text" class="validate" required>
+                        <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="email" type="email" class="validate" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="telefono" type="tel" class="validate" required>
+                        <label for="telefono">Teléfono</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" form="formEditarCliente" class="btn-flat">Guardar</button>
+                <a href="#!" class="modal-close btn-flat">Cancelar</a>
+            </div>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+            });
+        </script>
+        
+
+        <div id="modalEliminar1" class="modal">
+            <div class="modal-content">
+                <h4>Eliminar Cliente</h4>
+                <p>¿Estás seguro de que deseas eliminar a Juan Pérez?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Eliminar</a>
+                <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+            </div>
+        </div>
+
+<div id="modalAgregar" class="modal">
+    <div class="modal-content">
+        <h4>Agregar Cliente</h4>
+        <form id="formAgregarCliente" action="clientes.html" method="POST">
+            <div class="input-field">
+                <input id="nombre" type="text" class="validate" required>
+                <label for="nombre">Nombre</label>
+            </div>
+            <div class="input-field">
+                <input id="email" type="email" class="validate" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <input id="telefono" type="tel" class="validate" required>
+                <label for="telefono">Teléfono</label>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" form="formAgregarCliente" class="waves-effect waves-green btn-flat">Agregar</button>
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+</script>
+
+        <!-- JS Scripts-->
+        <!-- jQuery Js -->
+        <script src="assets/js/jquery-1.10.2.js"></script>
+        <!-- Bootstrap Js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/materialize/js/materialize.min.js"></script>
+        <!-- Initialize modals -->
+        <script>
+            $(document).ready(function(){
+                $('.modal').modal();
+            });
+        </script>
+    </div>
+</body>
+
+</html>

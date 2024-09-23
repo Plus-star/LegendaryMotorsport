@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" media="screen,projection" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="assets/js/Lightweight-Chart/cssCharts.css"> 
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle waves-effect waves-dark" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand waves-effect waves-dark" href="index.html"><img src="assets/img/LegendaryMotorsport-GTAV-Logo.webp" alt="" height="40px" width="100px"></a>
+                <div id="sideNav" href=""><i class="material-icons dp48">toc</i></div>
+            </div>
+            <ul class="nav navbar-top-links navbar-right"> 
+                <li><a class="dropdown-button waves-effect waves-dark" href="#!" data-activates="dropdown1"><i class="fa fa-user fa-fw"></i> <b>Usuario</b> <i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </nav>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="../startbootstrap-grayscale-gh-pages/index.html"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesión</a></li>
+        </ul>
+       
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li><a class="active-menu waves-effect waves-dark" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>                
+                    <li><a href="table.html" class="waves-effect waves-dark"><i class="fa fa-table"></i> Tablas</a></li>
+                    <li><a href="clientes.html" class="waves-effect waves-dark"><i class="fa fa-fw fa-file"></i> Clientes</a></li>
+                    <li><a href="usuarios.html" class="waves-effect waves-dark"><i class="fa fa-users"></i> Usuarios</a></li>
+                    <li><a href="ventas.html" class="waves-effect waves-dark"><i class="fa fa-comment"></i> Ventas</a></li>
+                </ul>
+            </div>
+        </nav>
+      
+        <div id="page-wrapper">
+            <div class="header"> 
+                <h1 class="page-header" style="color: white;">
+                    Dashboard
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li class="active">Productos</li>
+                </ol> 
+            </div>
+                
+            <div id="page-inner"> 
+                <div class="row">
+					<div id="page-inner"> 
+						<!-- /. ROW  -->
+				 <div class="row">
+					 <div class="col-md-4 col-sm-4">
+						 <div class="card">
+							 <div class="card-image waves-effect waves-block waves-light">
+							   <img class="activator" src="assets/img/CoquetteD10-GTAO-front.webp">
+							 </div>
+							 <div class="card-content" style="background-color: rgb(133, 5, 5);">
+							   <span class="card-title activator grey-text text-white-4">Coquette D10<i class="material-icons right">more_vert</i></span>
+							   <p style="color: white;">$500000</p>
+							 </div>
+							 <div class="card-reveal">
+							   <span class="card-title grey-text text-darken-4">Coquette D10<i class="material-icons right">close</i></span>
+							   <p>El Coquette D10 es un homenaje a los autos deportivos clásicos, fusionando nostalgia y tecnología moderna. Su motor turboalimentado proporciona una potencia explosiva y una respuesta instantánea. El diseño exterior destaca por sus líneas fluidas y detalles distintivos que capturan la atención. En el interior, el Coquette D10 ofrece un ambiente lujoso con asientos de alto rendimiento y un sistema de sonido premium, asegurando que cada viaje sea memorable.</p>
+							 </div>
+						   </div>
+					 </div>
+					 <div class="col-md-4 col-sm-4">
+						  <div class="card">
+							 <div class="card-image waves-effect waves-block waves-light">
+							   <img class="activator" src="assets/img/ItaliRSX-GTAO-front.webp">
+							 </div>
+							 <div class="card-content" style="background-color: rgb(133, 5, 5);">
+							   <span class="card-title activator grey-text text-white-4">Itali RSX<i class="material-icons right">more_vert</i></span>
+							   <p style="color: white;">$300000</p>
+							 </div>
+							 <div class="card-reveal">
+							   <span class="card-title grey-text text-darken-4">Itali RSX<i class="material-icons right">close</i></span>
+							   <p>El Itali RSX es la representación perfecta de la ingeniería italiana, combinando estilo y rendimiento. Con un motor V8 que genera una potencia impresionante, este auto es capaz de alcanzar velocidades que dejan sin aliento. Su diseño elegante y agresivo se complementa con un interior lujoso, lleno de tecnología de última generación. Cada detalle, desde los acabados en cuero hasta el sistema de infoentretenimiento, está diseñado para ofrecer una experiencia de conducción sin igual.</p>
+							 </div>
+						   </div>
+					 </div>
+					 <div class="col-md-4 col-sm-4">
+							 <div class="card">
+							 <div class="card-image waves-effect waves-block waves-light">
+							   <img class="activator" src="assets/img/Locust-GTAO-front.webp">
+							 </div>
+							 <div class="card-content" style="background-color: rgb(133, 5, 5);">
+							   <span class="card-title activator grey-text text-white-4">Locust<i class="material-icons right">more_vert</i></span>
+							   <p style="color: white;">$250000</p>
+							 </div>
+							 <div class="card-reveal">
+							   <span class="card-title grey-text text-darken-4">Locust<i class="material-icons right">close</i></span>
+							   <p>El Locust es un superdeportivo que destaca por su diseño ligero y aerodinámico. Equipado con un motor potente, ofrece una aceleración vertiginosa y una maniobrabilidad excepcional. Su chasis de fibra de carbono y suspensión ajustable garantizan una experiencia de conducción emocionante y precisa. En el interior, cuenta con un acabado de lujo, tecnología avanzada y asientos deportivos que aseguran comodidad y soporte en cada curva.</p>
+							 </div>
+						   </div>
+					 </div>
+					 <div class="col-md-4 col-sm-4">
+						 <div class="card">
+						 <div class="card-image waves-effect waves-block waves-light">
+						   <img class="activator" src="assets/img/CarbonRS-GTAV-front.webp">
+						 </div>
+						 <div class="card-content" style="background-color: rgb(133, 5, 5);">
+						   <span class="card-title activator grey-text text-white-4">Carbon RS<i class="material-icons right">more_vert</i></span>
+						   <p style="color: white;">$110000</p>
+						 </div>
+						 <div class="card-reveal">
+						   <span class="card-title grey-text text-darken-4">Carbon RS<i class="material-icons right">close</i></span>
+						   <p>La Carbon RS es una moto deportiva que combina diseño futurista con un rendimiento excepcional. Con un motor de alta cilindrada, ofrece aceleración rápida y una velocidad máxima impresionante. Su chasis ligero de fibra de carbono mejora la maniobrabilidad y el control en curvas. Además, cuenta con tecnología avanzada, como frenos antibloqueo y control de tracción, para una experiencia de conducción segura y emocionante.</p>
+						 </div>
+					   </div>
+				 </div>
+				 <div class="col-md-4 col-sm-4">
+					 <div class="card">
+					 <div class="card-image waves-effect waves-block waves-light">
+					   <img class="activator" src="assets/img/DoubleT-GTAV-front.webp">
+					 </div>
+					 <div class="card-content" style="background-color: rgb(133, 5, 5);">
+					   <span class="card-title activator grey-text text-white-4">Double T<i class="material-icons right">more_vert</i></span>
+					   <p style="color: white;">$230000</p>
+					 </div>
+					 <div class="card-reveal">
+					   <span class="card-title grey-text text-darken-4">Double T<i class="material-icons right">close</i></span>
+					   <p>La Double T es una moto que combina estilo y potencia, perfecta para quienes buscan una experiencia de conducción dinámica. Su motor potente garantiza un rendimiento superior, mientras que su diseño ergonómico proporciona comodidad en cada viaje. Con características como un sistema de escape de alto rendimiento y suspensión ajustable, la Double T ofrece una mezcla ideal de confort y adrenalina en la carretera.</p>
+					 </div>
+				   </div>
+			 </div>
+			 <div class="col-md-4 col-sm-4">
+				 <div class="card">
+				 <div class="card-image waves-effect waves-block waves-light">
+				   <img class="activator" src="assets/img/Shinobi-GTAOe-front.webp">
+				 </div>
+				 <div class="card-content" style="background-color: rgb(133, 5, 5);">
+				   <span class="card-title activator grey-text text-white-4">Shinobi<i class="material-icons right">more_vert</i></span>
+				   <p style="color: white;">$150000</p>
+				 </div>
+				 <div class="card-reveal">
+				   <span class="card-title grey-text text-darken-4">Shinobi<i class="material-icons right">close</i></span>
+				   <p>La Shinobi es una moto deportiva que destaca por su agilidad y estilo agresivo. Equipado con un motor potente, este modelo está diseñado para ofrecer velocidad y control en cada curva. Su diseño aerodinámico no solo es atractivo, sino que también mejora el rendimiento general. La Shinobi es perfecta tanto para la pista como para la carretera, ofreciendo una experiencia de conducción emocionante y segura.</p>
+				 </div>
+			   </div>
+		 </div>
+                    <!-- Tabla de Clientes -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-action">
+                                    Listado de Productos
+                                    <a href="#modalAgregar" class="btn waves-effect waves-light modal-trigger right">Agregar Producto</a>
+                                </div>
+                                <div class="card-content">
+                                    <table class="striped responsive-table">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Nombre</th>
+                                                <th>Categoria</th>
+                                                <th>Precio</th>
+                                                <th>Fecha de Fabricación</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Coquette D10</td>
+                                                <td>Deportivo</td>
+                                                <td>$500000</td>
+                                                <td>2005-10-08</td>
+                                                <td>
+                                                    <a href="#modalVer1" class="btn waves-effect waves-light modal-trigger">Ver</a>
+                                                    <a href="#modalEditar1" class="btn waves-effect waves-light modal-trigger">Editar</a>
+                                                    <a href="#modalEliminar1" class="btn waves-effect waves-light red modal-trigger">Eliminar</a>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <td>2</td>
+                                                <td>Itali RSX</td>
+                                                <td>Deportivo</td>
+                                                <td>$300000</td>
+                                                <td>2010-11-12</td>
+                                                <td>
+                                                    <a href="#modalVer2" class="btn waves-effect waves-light modal-trigger">Ver</a>
+                                                    <a href="#modalEditar2" class="btn waves-effect waves-light modal-trigger">Editar</a>
+                                                    <a href="#modalEliminar2" class="btn waves-effect waves-light red modal-trigger">Eliminar</a>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <td>3</td>
+                                                <td>Locust</td>
+                                                <td>Deportivo</td>
+                                                <td>$250000</td>
+                                                <td>2006-01-15</td>
+                                                <td>
+                                                    <a href="#modalVer3" class="btn waves-effect waves-light modal-trigger">Ver</a>
+                                                    <a href="#modalEditar3" class="btn waves-effect waves-light modal-trigger">Editar</a>
+                                                    <a href="#modalEliminar3" class="btn waves-effect waves-light red modal-trigger">Eliminar</a>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <td>4</td>
+                                                <td>Carbon RS</td>
+                                                <td>Super Moto</td>
+                                                <td>$110000</td>
+                                                <td>2004-06-25</td>
+                                                <td>
+                                                    <a href="#modalVer4" class="btn waves-effect waves-light modal-trigger">Ver</a>
+                                                    <a href="#modalEditar4" class="btn waves-effect waves-light modal-trigger">Editar</a>
+                                                    <a href="#modalEliminar4" class="btn waves-effect waves-light red modal-trigger">Eliminar</a>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <td>5</td>
+                                                <td>Double T</td>
+                                                <td>Super Moto</td>
+                                                <td>$230000</td>
+                                                <td>2012-02-14</td>
+                                                <td>
+                                                    <a href="#modalVer5" class="btn waves-effect waves-light modal-trigger">Ver</a>
+                                                    <a href="#modalEditar5" class="btn waves-effect waves-light modal-trigger">Editar</a>
+                                                    <a href="#modalEliminar5" class="btn waves-effect waves-light red modal-trigger">Eliminar</a>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <td>6</td>
+                                                <td>Shinobi</td>
+                                                <td>Super Moto</td>
+                                                <td>$150000</td>
+                                                <td>2011-08-26</td>
+                                                <td>
+                                                    <a href="#modalVer6" class="btn waves-effect waves-light modal-trigger">Ver</a>
+                                                    <a href="#modalEditar6" class="btn waves-effect waves-light modal-trigger">Editar</a>
+                                                    <a href="#modalEliminar6" class="btn waves-effect waves-light red modal-trigger">Eliminar</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="clearBoth"><br/></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalVer1" class="modal">
+                    <div class="modal-content">
+                        <h4>Detalles de Producto</h4>
+                        <p>Nombre: Coquette D10</p>
+                        <p>Categoria: Deportivo</p>
+                        <p>Precio: $500000</p>
+                        <p>Fecha de Fabricación: 2005-10-08</p>
+						<p>Descripción: El Coquette D10 es un homenaje a los autos deportivos clásicos, fusionando nostalgia y tecnología moderna. Su motor turboalimentado proporciona una potencia explosiva y una respuesta instantánea. El diseño exterior destaca por sus líneas fluidas y detalles distintivos que capturan la atención. En el interior, el Coquette D10 ofrece un ambiente lujoso con asientos de alto rendimiento y un sistema de sonido premium, asegurando que cada viaje sea memorable.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Cerrar</a>
+                    </div>
+                </div>
+
+                <div id="modalEditar1" class="modal">
+                    <div class="modal-content">
+                        <h4>Editar Datos</h4>
+                        <form>
+                            <div class="input-field">
+                                <input id="edit_name" type="text" class="validate" value="Coquette D10">
+                                <label for="edit_name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_email" type="email" class="validate" value="Deportivo">
+                                <label for="edit_email">Categoria</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="$500000">
+                                <label for="edit_phone">Precio</label>
+                            </div>
+							<div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="2005-10-08">
+                                <label for="edit_phone">Fecha de Fabricación</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_description" type="text" class="validate" value="El Coquette D10 es un homenaje a los autos deportivos clásicos, fusionando nostalgia y tecnología moderna. Su motor turboalimentado proporciona una potencia explosiva y una respuesta instantánea. El diseño exterior destaca por sus líneas fluidas y detalles distintivos que capturan la atención. En el interior, el Coquette D10 ofrece un ambiente lujoso con asientos de alto rendimiento y un sistema de sonido premium, asegurando que cada viaje sea memorable.">
+                                <label for="add_description">Descripción</label>
+                            </div>
+							<div class="input-field">
+								<input id="add_image_url" type="url" class="validate">
+								<label for="add_image_url">URL de Imagen</label>
+							</div>				
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Guardar</a>
+                    </div>
+                </div>
+
+                <div id="modalEliminar1" class="modal">
+                    <div class="modal-content">
+                        <h4>Confirmar Eliminación</h4>
+                        <p>¿Estás seguro de que deseas eliminar a Coquette D10?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Eliminar</a>
+                        <a href="#!" class="modal-close btn-flat">Cancelar</a>
+                    </div>
+                </div>
+
+				<div id="modalVer2" class="modal">
+                    <div class="modal-content">
+                        <h4>Detalles de Producto</h4>
+                        <p>Nombre: Itali RSX</p>
+                        <p>Categoria: Deportivo</p>
+                        <p>Precio: $300000</p>
+                        <p>Fecha de Fabricación: 2010-11-12</p>
+						<p>Descripción: El Itali RSX es la representación perfecta de la ingeniería italiana, combinando estilo y rendimiento. Con un motor V8 que genera una potencia impresionante, este auto es capaz de alcanzar velocidades que dejan sin aliento. Su diseño elegante y agresivo se complementa con un interior lujoso, lleno de tecnología de última generación. Cada detalle, desde los acabados en cuero hasta el sistema de infoentretenimiento, está diseñado para ofrecer una experiencia de conducción sin igual.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Cerrar</a>
+                    </div>
+                </div>
+
+                <div id="modalEditar2" class="modal">
+                    <div class="modal-content">
+                        <h4>Editar Datos</h4>
+                        <form>
+                            <div class="input-field">
+                                <input id="edit_name" type="text" class="validate" value="Itali RSX">
+                                <label for="edit_name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_email" type="email" class="validate" value="Deportivo">
+                                <label for="edit_email">Categoria</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="$300000">
+                                <label for="edit_phone">Precio</label>
+                            </div>
+							<div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="2010-11-12">
+                                <label for="edit_phone">Fecha de Fabricación</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_description" type="text" class="validate" value="El Itali RSX es la representación perfecta de la ingeniería italiana, combinando estilo y rendimiento. Con un motor V8 que genera una potencia impresionante, este auto es capaz de alcanzar velocidades que dejan sin aliento. Su diseño elegante y agresivo se complementa con un interior lujoso, lleno de tecnología de última generación. Cada detalle, desde los acabados en cuero hasta el sistema de infoentretenimiento, está diseñado para ofrecer una experiencia de conducción sin igual.">
+                                <label for="add_description">Descripción</label>
+                            </div>
+							<div class="input-field">
+								<input id="add_image_url" type="url" class="validate">
+								<label for="add_image_url">URL de Imagen</label>
+							</div>				
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Guardar</a>
+                    </div>
+                </div>
+
+                <div id="modalEliminar2" class="modal">
+                    <div class="modal-content">
+                        <h4>Confirmar Eliminación</h4>
+                        <p>¿Estás seguro de que deseas eliminar a Itali RSX?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Eliminar</a>
+                        <a href="#!" class="modal-close btn-flat">Cancelar</a>
+                    </div>
+                </div>
+
+				<div id="modalVer3" class="modal">
+                    <div class="modal-content">
+                        <h4>Detalles de Producto</h4>
+                        <p>Nombre: Locust</p>
+                        <p>Categoria: Deportivo</p>
+                        <p>Precio: $250000</p>
+                        <p>Fecha de Fabricación: 2006-01-15</p>
+						<p>Descripción: El Locust es un superdeportivo que destaca por su diseño ligero y aerodinámico. Equipado con un motor potente, ofrece una aceleración vertiginosa y una maniobrabilidad excepcional. Su chasis de fibra de carbono y suspensión ajustable garantizan una experiencia de conducción emocionante y precisa. En el interior, cuenta con un acabado de lujo, tecnología avanzada y asientos deportivos que aseguran comodidad y soporte en cada curva.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Cerrar</a>
+                    </div>
+                </div>
+
+                <div id="modalEditar3" class="modal">
+                    <div class="modal-content">
+                        <h4>Editar Datos</h4>
+                        <form>
+                            <div class="input-field">
+                                <input id="edit_name" type="text" class="validate" value="Locust">
+                                <label for="edit_name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_email" type="email" class="validate" value="Deportivo">
+                                <label for="edit_email">Categoria</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="$250000">
+                                <label for="edit_phone">Precio</label>
+                            </div>
+							<div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="2006-01-15">
+                                <label for="edit_phone">Fecha de Fabricación</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_description" type="text" class="validate" value="El Locust es un superdeportivo que destaca por su diseño ligero y aerodinámico. Equipado con un motor potente, ofrece una aceleración vertiginosa y una maniobrabilidad excepcional. Su chasis de fibra de carbono y suspensión ajustable garantizan una experiencia de conducción emocionante y precisa. En el interior, cuenta con un acabado de lujo, tecnología avanzada y asientos deportivos que aseguran comodidad y soporte en cada curva.">
+                                <label for="add_description">Descripción</label>
+                            </div>
+							<div class="input-field">
+								<input id="add_image_url" type="url" class="validate">
+								<label for="add_image_url">URL de Imagen</label>
+							</div>				
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Guardar</a>
+                    </div>
+                </div>
+
+                <div id="modalEliminar3" class="modal">
+                    <div class="modal-content">
+                        <h4>Confirmar Eliminación</h4>
+                        <p>¿Estás seguro de que deseas eliminar a Locust?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Eliminar</a>
+                        <a href="#!" class="modal-close btn-flat">Cancelar</a>
+                    </div>
+                </div>
+
+				<div id="modalVer4" class="modal">
+                    <div class="modal-content">
+                        <h4>Detalles de Producto</h4>
+                        <p>Nombre: Carbon RS</p>
+                        <p>Categoria: Super Moto</p>
+                        <p>Precio: $110000</p>
+                        <p>Fecha de Fabricación: 2004-06-25</p>
+						<p>Descripción: La Carbon RS es una moto deportiva que combina diseño futurista con un rendimiento excepcional. Con un motor de alta cilindrada, ofrece aceleración rápida y una velocidad máxima impresionante. Su chasis ligero de fibra de carbono mejora la maniobrabilidad y el control en curvas. Además, cuenta con tecnología avanzada, como frenos antibloqueo y control de tracción, para una experiencia de conducción segura y emocionante.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Cerrar</a>
+                    </div>
+                </div>
+
+                <div id="modalEditar4" class="modal">
+                    <div class="modal-content">
+                        <h4>Editar Datos</h4>
+                        <form>
+                            <div class="input-field">
+                                <input id="edit_name" type="text" class="validate" value="Carbon RS">
+                                <label for="edit_name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_email" type="email" class="validate" value="Super Moto">
+                                <label for="edit_email">Categoria</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="$110000">
+                                <label for="edit_phone">Precio</label>
+                            </div>
+							<div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="2004-06-25">
+                                <label for="edit_phone">Fecha de Fabricación</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_description" type="text" class="validate" value="La Carbon RS es una moto deportiva que combina diseño futurista con un rendimiento excepcional. Con un motor de alta cilindrada, ofrece aceleración rápida y una velocidad máxima impresionante. Su chasis ligero de fibra de carbono mejora la maniobrabilidad y el control en curvas. Además, cuenta con tecnología avanzada, como frenos antibloqueo y control de tracción, para una experiencia de conducción segura y emocionante.">
+                                <label for="add_description">Descripción</label>
+                            </div>
+							<div class="input-field">
+								<input id="add_image_url" type="url" class="validate">
+								<label for="add_image_url">URL de Imagen</label>
+							</div>				
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Guardar</a>
+                    </div>
+                </div>
+
+                <div id="modalEliminar4" class="modal">
+                    <div class="modal-content">
+                        <h4>Confirmar Eliminación</h4>
+                        <p>¿Estás seguro de que deseas eliminar a Carbon RS?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Eliminar</a>
+                        <a href="#!" class="modal-close btn-flat">Cancelar</a>
+                    </div>
+                </div>
+
+				<div id="modalVer5" class="modal">
+                    <div class="modal-content">
+                        <h4>Detalles de Producto</h4>
+                        <p>Nombre: Double T</p>
+                        <p>Categoria: Super Moto</p>
+                        <p>Precio: $230000</p>
+                        <p>Fecha de Fabricación: 2012-02-14</p>
+						<p>Descripción: La Double T es una moto que combina estilo y potencia, perfecta para quienes buscan una experiencia de conducción dinámica. Su motor potente garantiza un rendimiento superior, mientras que su diseño ergonómico proporciona comodidad en cada viaje. Con características como un sistema de escape de alto rendimiento y suspensión ajustable, la Double T ofrece una mezcla ideal de confort y adrenalina en la carretera.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Cerrar</a>
+                    </div>
+                </div>
+
+                <div id="modalEditar5" class="modal">
+                    <div class="modal-content">
+                        <h4>Editar Datos</h4>
+                        <form>
+                            <div class="input-field">
+                                <input id="edit_name" type="text" class="validate" value="Double T">
+                                <label for="edit_name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_email" type="email" class="validate" value="Super Moto">
+                                <label for="edit_email">Categoria</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="$230000">
+                                <label for="edit_phone">Precio</label>
+                            </div>
+							<div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="2012-02-14">
+                                <label for="edit_phone">Fecha de Fabricación</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_description" type="text" class="validate" value="La Double T es una moto que combina estilo y potencia, perfecta para quienes buscan una experiencia de conducción dinámica. Su motor potente garantiza un rendimiento superior, mientras que su diseño ergonómico proporciona comodidad en cada viaje. Con características como un sistema de escape de alto rendimiento y suspensión ajustable, la Double T ofrece una mezcla ideal de confort y adrenalina en la carretera.">
+                                <label for="add_description">Descripción</label>
+                            </div>
+							<div class="input-field">
+								<input id="add_image_url" type="url" class="validate">
+								<label for="add_image_url">URL de Imagen</label>
+							</div>				
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Guardar</a>
+                    </div>
+                </div>
+
+                <div id="modalEliminar5" class="modal">
+                    <div class="modal-content">
+                        <h4>Confirmar Eliminación</h4>
+                        <p>¿Estás seguro de que deseas eliminar a Double T?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Eliminar</a>
+                        <a href="#!" class="modal-close btn-flat">Cancelar</a>
+                    </div>
+                </div>
+
+				<div id="modalVer6" class="modal">
+                    <div class="modal-content">
+                        <h4>Detalles de Producto</h4>
+                        <p>Nombre: Shinobi</p>
+                        <p>Categoria: Super Moto</p>
+                        <p>Precio: $150000</p>
+                        <p>Fecha de Fabricación: 2011-08-26</p>
+						<p>Descripción: La Shinobi es una moto deportiva que destaca por su agilidad y estilo agresivo. Equipado con un motor potente, este modelo está diseñado para ofrecer velocidad y control en cada curva. Su diseño aerodinámico no solo es atractivo, sino que también mejora el rendimiento general. La Shinobi es perfecta tanto para la pista como para la carretera, ofreciendo una experiencia de conducción emocionante y segura.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Cerrar</a>
+                    </div>
+                </div>
+
+                <div id="modalEditar6" class="modal">
+                    <div class="modal-content">
+                        <h4>Editar Datos</h4>
+                        <form>
+                            <div class="input-field">
+                                <input id="edit_name" type="text" class="validate" value="Shinobi">
+                                <label for="edit_name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_email" type="email" class="validate" value="Super Moto">
+                                <label for="edit_email">Categoria</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="$150000">
+                                <label for="edit_phone">Precio</label>
+                            </div>
+							<div class="input-field">
+                                <input id="edit_phone" type="text" class="validate" value="2011-08-26">
+                                <label for="edit_phone">Fecha de Fabricación</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_description" type="text" class="validate" value="La Shinobi es una moto deportiva que destaca por su agilidad y estilo agresivo. Equipado con un motor potente, este modelo está diseñado para ofrecer velocidad y control en cada curva. Su diseño aerodinámico no solo es atractivo, sino que también mejora el rendimiento general. La Shinobi es perfecta tanto para la pista como para la carretera, ofreciendo una experiencia de conducción emocionante y segura.">
+                                <label for="add_description">Descripción</label>
+                            </div>
+							<div class="input-field">
+								<input id="add_image_url" type="url" class="validate">
+								<label for="add_image_url">URL de Imagen</label>
+							</div>				
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Guardar</a>
+                    </div>
+                </div>
+
+                <div id="modalEliminar6" class="modal">
+                    <div class="modal-content">
+                        <h4>Confirmar Eliminación</h4>
+                        <p>¿Estás seguro de que deseas eliminar a Shinobi?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Eliminar</a>
+                        <a href="#!" class="modal-close btn-flat">Cancelar</a>
+                    </div>
+                </div>
+
+                <div id="modalAgregar" class="modal">
+                    <div class="modal-content">
+                        <h4>Agregar Producto</h4>
+                        <form>
+                            <div class="input-field">
+                                <input id="add_name" type="text" class="validate">
+                                <label for="add_name">Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="add_email" type="email" class="validate">
+                                <label for="add_email">Categoria</label>
+                            </div>
+                            <div class="input-field">
+                                <input id="add_price" type="text" class="validate">
+                                <label for="add_price">Precio</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_date" type="text" class="validate">
+                                <label for="add_date">Fecha de Fabricación</label>
+                            </div>
+							<div class="input-field">
+                                <input id="add_description" type="text" class="validate">
+                                <label for="add_description">Descripción</label>
+                            </div>
+							<div class="input-field">
+								<input id="add_image_url" type="url" class="validate">
+								<label for="add_image_url">URL de Imagen</label>
+							</div>							
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close btn-flat">Agregar</a>
+                    </div>
+                </div>
+            </div>
+            <footer><p>Legendary Motorsport, todos los derechos reservados.</p></footer>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            M.Modal.init(elems);
+        });
+    </script>
+    
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/materialize/js/materialize.min.js"></script>
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+    <script src="assets/js/easypiechart.js"></script>
+    <script src="assets/js/easypiechart-data.js"></script>
+    <script src="assets/js/Lightweight-Chart/jquery.chart.js"></script>
+    <script src="assets/js/custom-scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('ul.tabs').tabs();
+            $('.collapsible').collapsible({
+                accordion: false,
+                onOpen: function(el) { alert('Open'); },
+                onClose: function(el) { alert('Closed'); }
+            });
+        });
+    </script>
+</body>
+</html>
